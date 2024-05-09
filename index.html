@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вивчення Python</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        header {
+            background-image: url('python_bg.jpg');
+            background-size: cover;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #007bff;
+        }
+        section {
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .content, .sidebar {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: calc(50% - 20px);
+            margin-bottom: 20px;
+        }
+        .content img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .sidebar {
+            width: calc(50% - 20px);
+        }
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+
+        /* Cards */
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            .container > section {
+                flex-direction: column;
+            }
+            .content, .sidebar {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Вивчення мови програмування Python <i class="fab fa-python"></i></h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#start">Початок</a></li>
+        <li><a href="#basics">Основи</a></li>
+        <li><a href="#advanced">Розширення</a></li>
+        <li><a href="#projects">Проекти</a></li>
+    </ul>
+</nav>
+
+<section id="start">
+    <div class="container">
+        <div class="content">
+            <img src="https://files.realpython.com/media/python-beginner-tips.50f5f0c4e739.jpg" alt="Початок вивчення Python">
+            <h2>Початок вивчення Python</h2>
+            <p>Вітаємо на сайті для початківців у вивченні мови програмування Python! Python - це потужна, легка у вивченні мова програмування, яка має широкий спектр застосувань. Незалежно від того, чи ви новачок у програмуванні, чи досвідчений розробник, ви знайдете наш сайт корисним.</p>
+            <p>На нашому сайті ви зможете знайти посібники, уроки, проекти та багато іншого, щоб допомогти вам у вивченні Python. Почніть з основ та поступово переходьте до більш складних концепцій.</p>
+            <p>Давайте розпочнемо свій шлях вивчення Python!</p>
+        </div>
+        <div class="sidebar">
+            <h2>Початкові ресурси</h2>
+            <div class="card">
+                <h3><a href="https://www.python.org" target="_blank">Офіційний сайт Python</a></h3>
+                <p>Офіційний сайт мови програмування Python - найкраще місце для отримання документації, новин та ресурсів.</p>
+            </div>
+            <div class="card">
+                <h3><a href="https://www.codecademy.com/learn/learn-python" target="_blank">Курси на Codecademy</a></h3>
+                <p>Інтерактивні курси з Python для всіх рівнів. Вивчайте, розвивайтесь та практикуйтеся в програмуванні.</p>
+            </div>
+            <div class="card">
+                <h3><a href="https://www.yakaboo.ua/programuvannja-movoju-python.html" target="_blank">Книга "Програмування мовою Python"</a></h3>
+                <p>Одна з найкращих книг для вивчення Python, яка охоплює всі важливі теми та надає багато прикладів коду.</p>
+            </div>
+            <div class="card">
+                <h3><a href="https://www.learnpython.org" target="_blank">LearnPython.org</a></h3>
+                <p>Інтерактивні уроки та вправи для вивчення основ Python просто у вашому браузері.</p>
+            </div>
+            <div class="card">
+                <h3><a href="https://www.w3schools.com/python/" target="_blank">W3Schools Python Tutorial</a></h3>
+                <p>Короткі та зрозумлі уроки з основ Python від одного з найпопулярніших джерел навчання програмування.</p>
+            </div>
+            <div class="card">
+                <h3><a href="https://realpython.com" target="_blank">Real Python</a></h3>
+                <p>Статті, уроки та ресурси для Python розробників будь-якого рівня.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="basics">
+    <div class="container">
+        <div class="content">
+            <img src="https://files.realpython.com/media/The-Python-return-Statement_Watermarked.42392feb6973.jpg" alt="Основи Python">
+            <h2>Основи Python</h2>
+            <p>Python - це мова програмування високого рівня, яка відома своєю простотою та читабельністю коду. Основи Python включають в себе роботу з змінними, типами даних, умовними конструкціями, циклами та функціями.</p>
+            <p>Ознайомлення з цими базовими концепціями допоможе вам зрозуміти фундаментальні принципи Python та створити міцну основу для подальшого вивчення мови програмування.</p>
+            <p>Давайте поглибимо наші знання в основах Python!</p>
+        </div>
+        <div class="sidebar">
+            <h2>Джерела для вивчення основ Python</h2>
+            <div class="card">
+                <h3><a href="https://www.learnpython.org" target="_blank">LearnPython.org</a></h3>
+                <p>Інтерактивні уроки та вправи для вивчення основ Python просто у вашому браузері.</p>
+            </div>
+            <div class="card">
+                <h3><a href="https://www.w3schools.com/python/" target="_blank">W3Schools Python Tutorial</a></h3>
+                <p>Короткі та зрозумлі уроки з основ Python від одного з найпопулярніших джерел навчання програмування.</p>
+            </div>
+            <div class="card">
+                <h3><a href="https://realpython.com" target="_blank">Real Python</a></h3>
+                <p>Статті, уроки та ресурси для Python розробників будь-якого рівня.</p>
+            </div>
+            <div class="card">
+                <h3><a href="https://www.codecademy.com/learn/learn-python" target="_blank">Курси на Codecademy</a></h3>
+                <p>Інтерактивні курси з Python для всіх рівнів. Вивчайте, розвивайтесь та практикуйтеся в програмуванні.</p>
+            </div>
+            <div class="card">
+                <h3><a href="https://www.yakaboo.ua/ua/prishvidshenij-kurs-python.html?gad_source=1&gclid=Cj0KCQjw6PGxBhCVARIsAIumnWZ3pdYwX31x5RGpfaP4o8_juEy3fi1wLf21cosdEFMWy1epICygkFQaAkU3EALw_wcB" target="_blank">Книга "Пришвидшений курс Python"</a></h3>
+                <p>Одна з найкращих книг для вивчення Python, яка охоплює всі важливі теми та надає багато прикладів коду.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="advanced">
+    <div class="container">
+        <div class="content">
+            <img src="https://files.realpython.com/media/Pythons-property_Watermarked.a888a85a9cd8.jpg" alt="Розширення вивчення Python">
+            <h2>Розширення вивчення Python</h2>
+            <p>Розширення знань Python відбувається через вивчення більш складних тем та концепцій, таких як робота з бібліотеками, розробка веб-додатків та робота з базами даних.</p>
+            <p>На цьому етапі ви також можете вивчати різні фреймворки та інструменти, які роблять вас більш продуктивними та допомагають вирішувати складніші завдання.</p>
+            <p>Давайте поглибимо наші знання в розширенні вивчення Python!</p>
+        </div>
+        <div class="sidebar">
+            <h2>Рекомендовані ресурси для розширення</h2>
+            <div class="card">
+                <h3><a href="https://www.djangoproject.com/" target="_blank">Django Framework</a></h3>
+                <p>Фреймворк для швидкої розробки веб-додатків на Python.</p>
+            </div>
+            <div class="card">
+                <h3><a href="https://flask.palletsprojects.com/" target="_blank">Flask Framework</a></h3>
+                <p>Легкий мікрофреймворк для роботи з веб-додатками на Python.</p>
+            </div>
+            <div class="card">
+                <h3><a href="https://www.sqlalchemy.org/" target="_blank">SQLAlchemy</a></h3>
+                <p>Бібліотека для роботи з базами даних у Python, яка забезпечує ORM.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <div class="content">
+            <img src="https://files.realpython.com/media/Class-Concepts-Object-Oriented-Programming-in-Python_Watermarked.6cf327c51434.jpg" alt="Проекти з Python">
+            <h2>Проекти з Python</h2>
+            <p>Найкращим способом поглибити свої знання Python є практика через реалізацію проектів. Спробуйте створити власні програми, веб-додатки, ігри або скрипти, щоб застосовувати те, що ви вивчили.</p>
+            <p>Проекти допоможуть вам побачити, як працює Python у реальних сценаріях та дадуть вам можливість показати свої навички потенційним роботодавцям.</p>
+            <p>Давайте реалізувати цікаві проекти з Python!</p>
+        </div>
+        <div class="sidebar">
+            <h2>Ідеї для проектів</h2>
+            <div class="card">
+                <h3><a href="https://www.freecodecamp.org/ukrainian/news/15-portfolio-rozrobnykiv-dlya-natkhnennya/" target="_blank">Веб-сайт портфоліо</a></h3>
+                <p>Створіть веб-сайт, щоб продемонструвати свої проекти та досягнення в програмуванні.</p>
+            </div>
+            <div class="card">
+                <h3><a href="https://www.youtube.com/watch?v=YsY0K4BTkr8" target="_blank">Генератор паролів</a></h3>
+                <p>Напишіть скрипт, який генерує надійні паролі для користувачів.</p>
+            </div>
+            <div class="card">
+                <h3><a href="https://www.youtube.com/watch?v=FCNg8KyMmGI" target="_blank">20 проектів на Python</a></h3>
+                <p>Розробіть прості та не дуже програми, щоб показати свої навички у створенні власних проектів.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Вивчення Python. Усі права захищені.</p>
+</footer>
+
+</body>
+</html>
